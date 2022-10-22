@@ -1,11 +1,11 @@
 import React from 'react';
 import { FaUserCircle } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
-import { toast, ToastContainer } from 'react-toastify';
+// import { useNavigate } from 'react-router-dom';
+// import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const AddUser = () => {
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
     const addProduct = event => {
         event.preventDefault()      
@@ -58,7 +58,7 @@ const AddUser = () => {
 
                     <input type="submit" className='btn w-full btn-primary' value="Add User" />
                 </form>
-                <ToastContainer />
+                {/* <ToastContainer /> */}
             </div>
         </div>
     );

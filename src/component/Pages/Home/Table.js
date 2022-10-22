@@ -1,14 +1,15 @@
 import React from 'react';
 
 const Table = () => {
-    return (<div className='flex items-center my-5 justify-center mx-auto'>
+    return (<div className='items-center w-3/4 my-5 justify-center mx-auto'>
     
+    <h1 className='text-center text-3xl color-white mb-5'>User List</h1>
         <div className="overflow-x-auto">
             <div className="overflow-x-auto w-full">
-  <table className="table w-full text-center">
+  <table style={{background: 'rgba(211,211,211, 0.1)'}} className="border  p-6 border-green-400 w-full text-center">
   
-    <thead  className=''>
-      <tr className='text-center'>
+    <thead  className='mb-5'>
+      <tr className=' bg-blue-700 mb-5 text-white text-center'>
         <th className=''>Sl No</th>
         <th className=''>Name</th>
         <th>Email</th>
@@ -16,9 +17,9 @@ const Table = () => {
         <th>Action</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody className='py-3 text-center'>
     
-      <tr>
+      <tr className='text-center mt-5'>
         <td>1</td>
         <td>
           <div className="flex items-center space-x-3">

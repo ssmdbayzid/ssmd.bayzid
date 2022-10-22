@@ -15,7 +15,7 @@ const Header = () => {
         <NavLink to="#">About</NavLink>
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-2xl text-orange-300">Hasan Builders</a>
+    <a className="btn btn-ghost normal-case text-2xl text-orange-900">Hasan Builders</a>
   </div>
   <div className="navbar-center  hidden lg:flex">
     <ul className="menu menu-horizontal p-0 mr-4 text-blue-900">
