@@ -1,12 +1,11 @@
 import React from 'react';
-import Table from './Table';
 
 const Home = () => {
     return (
         <div>
-            <Table></Table>
+            Home
         </div>
-);
+    );
 };
 
 export default Home;
