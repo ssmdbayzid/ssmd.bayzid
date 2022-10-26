@@ -4,50 +4,16 @@ import {FaUser, FaHome, FaFacebook, FaLinkedin, FaGithub, FaDiscord} from "react
 import { NavLink } from 'react-router-dom';
 import profile from '../../Assect/profile photo.png'
 import {AiOutlineRight} from "react-icons/ai"
+import { sideBarMmenu } from '../../utility/data';
 
 const Sidebar = ({children}) => {
     const [open, setOpen] = useState(true)
 
 
     console.log(open)
-    const routes = [
-        {
-          path: "/",
-          name: "Home",
-          icon: <FaHome />,
-        },
-        {
-          path: "/about",
-          name: "About",
-          icon: <FaUser />,
-        },
-        {
-          path: "/skills",
-          name: "Skills",
-          icon: <FaUser />,
-        },
-        {
-          path: "/projects",
-          name: "Projects",
-          icon: <FaUser />,
-        },
-        {
-          path: "/blog",
-          name: "Blog",
-          icon: <FaUser />,
-        },
-        {
-          path: "/contact",
-          name: "Contact",
-          icon: <FaUser />,
-        },
-        
-    ]
-
-
 
     return (
-        <div className='main-container flex'>
+        <div className='main-container bg-[#082032] flex'>
             <motion.div style={{height: "100vh"}}  className={`sidebar md:"w-60" lg:w-72 lg:pt-20 "w-20" p-3 bg-gray-700 text-white overflow-y-auto`}>
 
                 {/* <div className='`${open ? "w-72" : "w-20"}'>
@@ -63,7 +29,7 @@ const Sidebar = ({children}) => {
             </div>
             <section className='routes mt-20'>
                 {
-                    routes && routes.map((route) => <NavLink to={route.path} key={route.name}  className="nav py-1 px-5 mt-6 border-red-600 hover:bg-red-300 hover:text-black border-b-2 text-xl rounded-xl flex items-center">
+                    sideBarMmenu && sideBarMmenu.map((route) => <NavLink to={route.path} key={route.name}  className={`${({isActive}) => isActive && "nav__links active-navlinks" } nav py-1 px-5 mt-6 border-red-600 hover:bg-red-300 hover:text-black border-b-2 text-xl rounded-xl flex items-center `}>
                         <div className='mr-3'>{route.icon}</div>
                         <div className=''>{route.name}</div>
                     </NavLink>)

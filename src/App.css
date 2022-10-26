@@ -25,3 +25,8 @@
 .nav :hover{
   background-color: rgba(173, 216, 230, 0.2);
 } */
+
+.active-navlinks {
+
+background-color: blueviolet;
+}

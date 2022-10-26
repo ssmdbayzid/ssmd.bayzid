@@ -3,7 +3,7 @@ import Skills from '../component/Skills';
 
 const Home = () => {
     return (
-        <div className='bg-[#082032] h-screen lg:w-[1650px]'>
+        <div className=' h-screen lg:w-[1650px]'>
             <Skills></Skills>
             
         </div>
